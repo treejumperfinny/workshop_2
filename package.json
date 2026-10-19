@@ -1,0 +1,28 @@
+{
+  "name": "athanor-prima-workshop",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Building Access: visitor passes for Contoso HQ. Workshop demo, demo data only.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "keys": "node scripts/generate-demo-keys.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "@types/qrcode": "^1.5.6",
+    "jsdom": "^26.1.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^4.0.18"
+  }
+}
